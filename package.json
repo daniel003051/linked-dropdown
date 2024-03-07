@@ -1,0 +1,27 @@
+{
+  "name": "vite-kintone",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "source .env && kintone-customize-uploader --base-url $KINTONE_BASE_URL --username $KINTONE_USERNAME --password $KINTONE_PASSWORD manifest.dev.json && vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@kintone/customize-uploader": "^8.0.9",
+    "@kintone/dts-gen": "^8.0.7",
+    "@kintone/rest-api-client": "^5.1.0",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.19"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "dotenv": "^16.4.5",
+    "naive-ui": "^2.38.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.4",
+    "vite-plugin-mkcert": "^1.17.4",
+    "vue-tsc": "^1.8.27"
+  }
+}
