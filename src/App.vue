@@ -47,5 +47,3 @@ onBeforeMount(() => {
   height: 20px;
 } */
 </style>
-
-<script type="module" src="

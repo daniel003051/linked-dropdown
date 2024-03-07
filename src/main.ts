@@ -27,7 +27,6 @@ kintone.events.on('app.record.create.show', (event: KintoneEvent) => {
   const app = createApp(App)
   app.use(pinia)
   app.mount(myContainer)
-  console.log('????????')
   event.record.result.disabled = true
   return event
 })
